@@ -22,3 +22,10 @@ dsdlc_generated
 
 # Log files
 *.log
+.pioenvs
+.piolibdeps
+.clang_complete
+.gcc-flags.json
+
+# PlatformIO ini file
+platformio.ini
