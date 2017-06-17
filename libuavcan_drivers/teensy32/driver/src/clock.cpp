@@ -20,7 +20,9 @@ elapsedMicros usec; // automatic rollover handling
 std::int64_t prev_adjustment = 0;
 std::int64_t utc_correction = 0;
 
+#ifdef __GNUC__
 __attribute__((noreturn))
+#endif
 static void fail()
 {
   while(true) {}
