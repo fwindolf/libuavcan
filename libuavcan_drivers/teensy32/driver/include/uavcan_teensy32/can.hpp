@@ -19,9 +19,11 @@ class CanDriver:
   public uavcan::ICanIface,
   uavcan::Noncopyable
 {
+private:
   static CanDriver self;
 
   CanDriver() { }
+
 
 public:
   /**
